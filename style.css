@@ -418,13 +418,14 @@ body {
 }
 
 .owl-avatar-img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-    background-color: var(--bg-card-hover);
-    border: 2px solid var(--color-primary);
-    box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    object-fit: contain;
+    background-color: #f1f5f9;
+    padding: 3px;
+    border: 2.5px solid var(--color-primary);
+    box-shadow: 0 4px 10px rgba(79, 70, 229, 0.2);
 }
 
 .owl-title h3 {
@@ -1005,12 +1006,14 @@ input:checked + .slider:before {
 }
 
 .owl-mini-avatar-img {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid var(--color-primary);
-    box-shadow: 0 0 5px rgba(79, 70, 229, 0.2);
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    object-fit: contain;
+    background-color: #f1f5f9;
+    padding: 2px;
+    border: 1.5px solid var(--color-primary);
+    box-shadow: 0 2px 6px rgba(79, 70, 229, 0.15);
     flex-shrink: 0;
 }
 
