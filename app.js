@@ -883,9 +883,13 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // Unlock next mission
             const currentItem = document.querySelector(`.mission-item[data-mission='${STATE.currentMission}']`);
-            currentItem.classList.remove("active");
-            currentItem.querySelector(".mission-status").innerHTML = `<i data-lucide="check-circle" class="text-call"></i>`;
-            currentItem.querySelector(".progress").style.width = "100%";
+            if (currentItem) {
+                currentItem.classList.remove("active");
+                const statusEl = currentItem.querySelector(".mission-status");
+                if (statusEl) statusEl.innerHTML = `<i data-lucide="check-circle" class="text-call"></i>`;
+                const progressEl = currentItem.querySelector(".progress");
+                if (progressEl) progressEl.style.width = "100%";
+            }
             lucide.createIcons();
 
             STATE.currentMission += 1;
