@@ -417,19 +417,14 @@ body {
     margin-bottom: 14px;
 }
 
-.owl-avatar {
-    width: 46px;
-    height: 46px;
+.owl-avatar-img {
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    background-color: rgba(99, 102, 241, 0.15);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
+    background-color: var(--bg-card-hover);
     border: 2px solid var(--color-primary);
-}
-
-.owl-emoji {
-    font-size: 26px;
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
 }
 
 .owl-title h3 {
@@ -1009,8 +1004,14 @@ input:checked + .slider:before {
     margin-bottom: 20px;
 }
 
-.owl-mini-emoji {
-    font-size: 20px;
+.owl-mini-avatar-img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 0 5px rgba(79, 70, 229, 0.2);
+    flex-shrink: 0;
 }
 
 .modal-guide-tip p {

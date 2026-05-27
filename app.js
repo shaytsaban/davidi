@@ -917,10 +917,10 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (STATE.eli5Mode) {
             btnEli5Toggle.innerHTML = `<i data-lucide="sparkles"></i> Normal Explanations`;
-            optiSpeechEl.textContent = "🦉 Understood! I will now translate all option terminology into terms a 5-year old can understand! No more scary Wall Street jargon.";
+            optiSpeechEl.textContent = "🙋‍♂️ Understood! Coach Davidi will now translate all options terminology into terms a 5-year old can understand! No more scary Wall Street jargon.";
         } else {
             btnEli5Toggle.innerHTML = `<i data-lucide="sparkles"></i> Translate to Plain English (ELI5)`;
-            optiSpeechEl.textContent = "🦉 Back to standard financial terminology. Let's conquer the options chain together!";
+            optiSpeechEl.textContent = "🙋‍♂️ Back to standard financial terminology. Let's conquer the options chain together!";
         }
         lucide.createIcons();
     });
@@ -997,8 +997,8 @@ document.addEventListener("DOMContentLoaded", () => {
     updatePortfolio();
     initGlossary();
     
-    // Set initial Opti advice
-    optiSpeechEl.innerHTML = `🦉 <strong>Mission 1 Setup</strong>: ${MISSIONS[1].optiTip}`;
+    // Set initial Coach Davidi advice
+    optiSpeechEl.innerHTML = `🙋‍♂️ <strong>Mission 1 Setup</strong>: ${MISSIONS[1].optiTip}`;
     
     // Initialize icons
     lucide.createIcons();
