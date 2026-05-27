@@ -112,11 +112,10 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Income with Covered Calls",
             desc: "Generate premium income by writing (selling) a Call option against stock you own.",
             check: () => {
-                // Must own the stock (represented by simple portfolio logic or having covered status)
-                return STATE.positions.some(p => p.asset === "SPY" && p.optionType === "CALL" && p.qty < 0);
+                return STATE.positions.some(p => p.optionType === "CALL" && p.qty < 0);
             },
             successTip: "Amazing! You sold a Call option and immediately collected premium cash. This is how professional funds generate consistent income.",
-            optiTip: "Covered calls are a favorite for long-term investors. Select SPY. To 'write' a call, you click the 'Bid (Sell)' button on the Option Chain. This obligates you to sell SPY if it rises, but you get paid cash up front!"
+            optiTip: "Covered calls are an investor favorite! Select any asset (AAPL, TSLA, or SPY). Go to the Calls side of the Option Chain, and click any 'Bid (Sell)' button to write (sell) a Call contract and collect instant cash premium!"
         },
         4: {
             title: "The Bull Call Spread",
